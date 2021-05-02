@@ -8,7 +8,7 @@ docker build -t docker-in-docker .
 
 ## Run container, sharing socket
 ```
-docker run -v /var/run/docker.sock:/var/run/docker.sock -it docker-in-docker bash
+docker run -v /var/run/docker.sock:/var/run/docker.sock -it --rm docker-in-docker bash
 ```
 
 ## Run Docker Commands
